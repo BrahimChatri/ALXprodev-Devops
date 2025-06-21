@@ -15,5 +15,13 @@ for pokemon in "${POKEMON_LIST[@]}"; do
     ) &
 done
 
+# Display running background jobs
+jobs
+
+# Example of handling (if needed, could use kill %jobnumber here)
+# kill %1  # Example only; optional unless needed by project
+
+# Wait for all background jobs to finish
 wait
+
 echo "All parallel requests complete ✅"
